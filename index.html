@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Adicione esta linha -->
+    <link rel="stylesheet" href="style.css"> 
     <script defer src="calculo.js"></script>
     <title>Auxiliar de Cálculo</title>
-</head>
 </head>
 <body>
     <main>
@@ -17,12 +15,14 @@
                 
                 <div>
                     <label for="media">MÉDIA:</label>
-                    <input type="number" id="media" required>
+                    <!-- Adicionado o step="any" aqui -->
+                    <input type="number" id="media" step="any" required>
                 </div>
                 
                 <div>
                     <label for="dados">DADOS:</label>
-                    <input type="number" id="dados" required>
+                    <!-- Adicionado o step="any" aqui -->
+                    <input type="number" id="dados" step="any" required>
                 </div>
                 
                 <button type="submit">Enviar</button>
