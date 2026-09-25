@@ -1,0 +1,163 @@
+/* Reseta margens e define a caixa de modelo padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do corpo (fundo cinza claro) */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* O container principal que vai parecer um cartão */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do formulário */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #2c3e50;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Campos de digitação */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botões genéricos */
+button {
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Botão específico de somar (Verde) */
+#btn-somar {
+    background-color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+#btn-somar:hover {
+    background-color: #27ae60;
+}
+
+/* Separações e Títulos */
+section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Estilo para os resultados parciais gerados pelo JS */
+#container-resultados p {
+    background: #f8f9fa;
+    padding: 12px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Resultado Final */
+output {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #e74c3c; /* Vermelho escuro para destaque */
+}
+
+/* =========================================
+   Responsividade: Celulares (ex: iPhone 11)
+   iPhone 11 tem largura de 414px em pé. 
+   O limite de 480px cobre perfeitamente.
+   ========================================= */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduz margens laterais da tela */
+    }
+
+    main {
+        padding: 20px; /* Reduz o espaço interno do cartão */
+        box-shadow: none; /* Remove a sombra para visual mais flat */
+        border: 1px solid #ddd;
+    }
+
+    /* Aumenta a área de toque nos inputs e botões para os dedos */
+    input[type="number"] {
+        padding: 14px; 
+    }
+
+    button {
+        width: 100%; /* Botões ocupam a tela toda */
+        padding: 15px;
+        font-weight: bold;
+    }
+}
+
+#painel-resultado {
+    margin-top: 15px;
+    background: #fff3cd; /* Fundo amarelo claro para destaque */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffe69c;
+    display: none; /* Fica escondido até o cálculo ser feito */
+}
+
+#painel-resultado p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}

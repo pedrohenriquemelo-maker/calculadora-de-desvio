@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Adicione esta linha -->
+    <script defer src="calculo.js"></script>
+    <title>Auxiliar de Cálculo</title>
+</head>
+</head>
+<body>
+    <main>
+        <form id="form-calculo">
+            <fieldset>
+                <legend>Entrada de Valores</legend>
+                
+                <div>
+                    <label for="media">MÉDIA:</label>
+                    <input type="number" id="media" required>
+                </div>
+                
+                <div>
+                    <label for="dados">DADOS:</label>
+                    <input type="number" id="dados" required>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <section aria-labelledby="titulo-parciais">
+            <h2 id="titulo-parciais">Resultados Parciais</h2>
+            <div id="container-resultados">
+                <!-- Os resultados do JS serão injetados aqui -->
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-desvio">
+            <h2 id="titulo-desvio">DESVIO PADRÃO:</h2>
+            <button type="button" id="btn-desvio">Calcular Desvio</button>
+            <div id="painel-resultado">
+                <!-- O relatório completo aparecerá aqui -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
